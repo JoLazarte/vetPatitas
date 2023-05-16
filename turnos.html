@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="index.css">
+   <script src="https://kit.fontawesome.com/5f812df695.js" crossorigin="anonymous"></script>
+</head>
+<a name="turnos"></a>
+
+
+<body>
+   <header>
+        <nav class="nav">
+           <div class="logoI">
+               <span><a class="" href="index.html#veterinaria"><i id="logoPat" class="fas fa-solid fa-paw"></i>
+                   Veterinaria Patitas</a></span>
+           </div>
+
+           <div class="botones-inicio">
+               
+                <span class="menu"><a href="#nosotros">NOSOTROS</a></span>
+                <span class="menu"><a href="#servicios">SERVICIOS</a></span>
+                
+                <span class=""><a href="registrarse.html#registrarse" target="_blank"><i class="fas fa-user icono-redes"></i></a>
+                </span>
+                <select class=" usuario-select">
+                    <option>
+                        <a href="registrarse.html#registrarse" target="_blank">REGISTRATE</a>
+                    </option>
+                    <option>MIS TURNOS</option>
+                    <option>MI PERFIL</option>
+                </select>
+                <span class="sp-btn"><a class="botonvioleta blanco" href="#contacto">CONTACTO</a></span>
+            </div>
+        </nav>
+      
+   </header>
+ 
+
+
+       <section class="caja-contacto">
+
+
+           <div class="contacto">
+
+
+          
+               <div class="escribime">
+                   <h1 class="font45">Turnos</h1>
+                   <h2>Nuevo turno</h2>
+                   <br>
+                   <form action="" method="POST">
+                       <div class="nombre-completo">
+                           <div class="form-control">
+                               <label for="tipoDeServicio">Elija el tipo de servicio *</label>
+                                   <select class="select">
+                                       <option>Clínico</option>
+                                       <option>Cardiología</option>
+                                       <option>Quirófano</option>
+                                       <option>Vacunatorio</option>
+                                       <option>Radiografía/Ecografía</option>
+                                       <option>Traumatología</option>
+                                       <option>Laboratorio</option>
+                                   </select>
+                           </div>
+                           <div class="form-control">
+                               <label for="especialidad">Elija una especialidad *</label>
+                               <select class="select">
+                                   <option>Mi primera consulta</option>
+                                   <option>Control</option>
+                                   <option>Castración</option>
+                                   <option>Antirábica</option>
+                                   <option>Radiografía de tórax</option>
+                                   <option>ecografía general</option>
+                                   <option>Electrocardiograma</option>
+
+
+                               </select>
+                           </div>
+                       </div>
+                       <div class="input-type">
+                           <div class="form-control">
+                               <label for="fecha">Elija una fecha *</label>
+                               <input
+                                   type="date"
+                                   name="Fecha"
+                                   id="fecha"
+                                   class="input-control"
+                                   aria-label="Fecha"
+                                   required>
+                           </div>
+                           <div class="form-control">
+                               <label for="time">Elija un horario *</label>
+                               <input
+                                   type="time"
+                                   name="Time"
+                                   id="time"
+                                   class="input-control"
+                                   aria-label="Time"
+                                   required>
+                           </div>
+                       </div>   
+                       <br>
+                       <button type="submit" class="contact-send-btn">
+                           Pedir turno
+                       </button>
+                   </form>
+
+
+                   <br>
+                   <br>
+                   <h2>Consultar mis turnos</h2>
+                   <br>
+                   <form action="" method="POST">
+                       <div class="nombre-completo">
+                           <div class="form-control">
+                               <label for="firstname">Nombre de la mascota *</label>
+                               <input
+                                   type="text"
+                                   name="Nombre"
+                                   id="firtsname"
+                                   class="input-firtsname input-control"
+                                   placeholder="p. ej.: Copito"
+                                   aria-label="Nombre"
+                                   required>
+                           </div>
+                           <div class="form-control">
+                               <label for="lastname">Apellido de la mascota *</label>
+                               <input
+                                   type="text"
+                                   name="Apellido"
+                                   id="lastname"
+                                   class="input-lastname input-control"
+                                   placeholder="p. ej.: Lazarte"
+                                   aria-label="Apellido"
+                                   required>
+                           </div>
+                       </div>
+                       <div class="input-type">
+                           <div class="form-control">
+                               <label for="fecha">Elija una fecha *</label>
+                               <input
+                                   type="date"
+                                   name="Fecha"
+                                   id="fecha"
+                                   class="input-control"
+                                   aria-label="Fecha"
+                                   required>
+                           </div>
+                           <div class="form-control">
+                               <label for="time">Elija un horario *</label>
+                               <input
+                                   type="time"
+                                   name="Time"
+                                   id="time"
+                                   class="input-control"
+                                   aria-label="Time"
+                                   required>
+                           </div>
+                       </div>   
+                       <br>
+                       <button type="submit" class="contact-send-btn">
+                           Revisar turno
+                       </button>
+                   </form>
+
+
+
+
+
+
+               </div>
+
+
+              
+                  
+                  
+          
+
+
+           </div>
+       </section>
+   </main>
+
+
+   <footer class="footer">
+       <div class="final">
+           <a class="span-f" href="#nosotros"><span>NOSOTROS</span></a>
+           <a class="span-f" href="#servicios"><span>SERVICIOS</span></a>
+           <a class="span-f" href="#contacto"><span>CONTACTO</span></a>
+       </div>
+       <div class="final">
+           <a href="index.html#veterinaria"><span><i class="fab fa-twitter icono-final"></i></span></a>
+           <a href="index.html#veterinaria"><span><i class="fab fa-facebook icono-final"></i></span></a>
+           <a href="index.html#veterinaria"><span><i class="fas fa-envelope icono-final"></i></span></a>
+           <a href="index.html#veterinaria"><span><i class="fab fa-whatsapp icono-final"></i></span></a>
+
+
+       </div>
+       <div class="final">
+           <i id="logoF" class="fas fa-solid fa-paw"></i>
+           <span>Veterinaria Patitas</span>
+           <i id="logoF" class="fas fa-solid fa-paw"></i>
+       </div>
+   </footer>
+
+
+</body>
+</html>
