@@ -10,7 +10,6 @@
 </head>
 <a name="turnos"></a>
 
-
 <body>
    <header>
         <nav class="nav">
@@ -24,13 +23,14 @@
                 <span class="menu"><a href="#nosotros">NOSOTROS</a></span>
                 <span class="menu"><a href="#servicios">SERVICIOS</a></span>
                 
-                <span class=""><a href="registrarse.html#registrarse" target="_blank"><i class="fas fa-user icono-redes"></i></a>
+                <span class=""><a href="registrate.html#registrate" target="_blank"><i class="fas fa-user icono-redes"></i></a>
                 </span>
-                <select class=" usuario-select">
-                    <option>
-                        <a href="registrarse.html#registrarse" target="_blank">REGISTRATE</a>
+                <select class=" usuario-select" name="ELEGIR" value="ELEGIR" onchange="document.location.href=this.value">
+            
+                    <option value="registrate.html#registrate">REGISTRATE
                     </option>
-                    <option>MIS TURNOS</option>
+                    <option value="turnos.html#turnos" target="_blank">MIS TURNOS
+                    </option>
                     <option>MI PERFIL</option>
                 </select>
                 <span class="sp-btn"><a class="botonvioleta blanco" href="#contacto">CONTACTO</a></span>
@@ -38,16 +38,11 @@
         </nav>
       
    </header>
- 
-
 
        <section class="caja-contacto">
 
-
            <div class="contacto">
-
-
-          
+    
                <div class="escribime">
                    <h1 class="font45">Turnos</h1>
                    <h2>Nuevo turno</h2>
@@ -167,24 +162,11 @@
                        </button>
                    </form>
 
-
-
-
-
-
                </div>
-
-
-              
-                  
-                  
-          
-
 
            </div>
        </section>
    </main>
-
 
    <footer class="footer">
        <div class="final">
