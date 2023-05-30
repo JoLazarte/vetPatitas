@@ -11,7 +11,7 @@
 
 <a name="registrate"></a>
 <body>
-   <header>
+    <header>
        <nav class="nav">
            <div class="logoI">
                <span><a class="" href="index.html#veterinaria" target="_blank"><i id="logoPat" class="fas fa-solid fa-paw"></i>
@@ -21,8 +21,8 @@
 
            <div class="botones-inicio">
                
-                <span class="menu"><a href="#nosotros">NOSOTROS</a></span>
-                <span class="menu"><a href="#servicios">SERVICIOS</a></span>
+                <span class="menu"><a href="index.html#nosotros" target="_blank">NOSOTROS</a></span>
+                <span class="menu"><a href="index.html#servicios" target="_blank">SERVICIOS</a></span>
                 
                 <span class=""><a href="registrate.html#registrate" target="_blank"><i class="fas fa-user icono-redes"></i></a>
                 </span>
@@ -38,8 +38,38 @@
             </div>
        </nav>
       
-   </header>
+    </header>
+
+    <aside class="box-aside">
+        <button class="icono-barras" id="icono-barras"><i class="fas fa-bars" aria-hidden="true"></i></button>
+        <section class="solapa-menu" id="solapa-menu">
+            <div class="logoI-solapa">
+                <span><a class="blanco" href="index.html#veterinaria"><i id="logoPat-solapa" class="fas fa-solid fa-paw"></i>
+                    Veterinaria Patitas</a></span>
+            </div>
+            <div class="op-solapa">
+               
+                <span class="menu-solapa"><a class="blanco" href="index.html#nosotros">QUIÉNES SOMOS</a></span>
+                <span class="menu-solapa"><a class="blanco" href="index.html#servicios">NUESTROS SERVICIOS</a></span>
+                <span class="menu-solapa"><a class="blanco" href="#">NUESTROS PACIENTES</a></span>
+                <span class="menu-solapa"><a class="blanco" href="#">SABÍAS QUE?</a></span>
+                <select class="usuario-select-solapa" name="ELEGIR" value="ELEGIR" onchange="document.location.href=this.value">
+                    <option selected disabled>NUEVO USUARIO</option>
+                    <option value="registrate.html#registrate">REGISTRATE
+                    </option>
+                    <option value="turnos.html#turnos" target="_blank">MIS TURNOS
+                    </option>
+                    <option>MI PERFIL</option>
+                </select>
+                <span class="sp-btn"><a class="botonvioleta blanco" href="#contacto">CONTACTO</a></span>
+            </div>
+
+        </section>
+
+    </aside>
+
        <section class="caja-contacto">
+        <button class="color-v" id="btn-aside"><i class="fas fa-bars" aria-hidden="true"></i></button>
 
            <div class="contacto">
           
@@ -216,6 +246,6 @@
        </div>
    </footer>
 
-
+<script src="index.js"></script>
 </body>
 </html>
