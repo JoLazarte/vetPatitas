@@ -29,9 +29,9 @@
                     <option selected disabled>NUEVO USUARIO</option>
                     <option value="registrate.html#registrate">REGISTRATE
                     </option>
-                    <option value="turnos.html#turnos" target="_blank">MIS TURNOS
+                    <option value="turnos.html#turnos">MIS TURNOS
                     </option>
-                    <option>MI PERFIL</option>
+                    <option value="perfil.html#perfil">MI PERFIL</option>
                 </select>
                 <span class="sp-btn"><a class="botonvioleta blanco" href="#contacto">CONTACTO</a></span>
             </div>
@@ -47,19 +47,19 @@
             </div>
             <div class="op-solapa">
                
-                <span class="menu-solapa" id="nos"><a class="blanco" href="#nosotros">QUIÉNES SOMOS</a></span>
+                <span class="menu-solapa" id="nos"><a class="blanco nos" href="#nosotros">QUIÉNES SOMOS</a></span>
                 <span class="menu-solapa" id="servs"><a class="blanco" href="#servicios">NUESTROS SERVICIOS</a></span>
-                <span class="menu-solapa"><a class="blanco" href="#">NUESTROS PACIENTES</a></span>
-                <span class="menu-solapa"><a class="blanco" href="#">SABÍAS QUE?</a></span>
+                <span class="menu-solapa"><a class="blanco" href="#pacientes">NUESTROS PACIENTES</a></span>
+                <span class="menu-solapa"><a class="blanco" href="#tutoriales">SABÍAS QUE?</a></span>
                 <select class="usuario-select-solapa" name="ELEGIR" value="ELEGIR" onchange="document.location.href=this.value">
                     <option selected disabled>NUEVO USUARIO</option>
-                    <option value="registrate.html#registrate">REGISTRATE
+                    <option class="opS" value="registrate.html#registrate">REGISTRATE
                     </option>
-                    <option value="turnos.html#turnos" target="_blank">MIS TURNOS
+                    <option class="opS" value="turnos.html#turnos" >MIS TURNOS
                     </option>
                     <option value="perfil.html#perfil">MI PERFIL</option>
                 </select>
-                <span class="sp-btn"><a class="botonvioleta blanco" href="#contacto">CONTACTO</a></span>
+                <span class="sp-btn"><a class="botonvioleta blanco" href="index.html#contacto">CONTACTO</a></span>
             </div>
 
         </section>
@@ -76,7 +76,7 @@
                 <h2 class="nosotros"><i id="logoPat" class="fas fa-solid fa-paw"></i>Veterinaria</h2>
                 <h1 class="patitas">Patitas</h1>
 
-                <p class="texto blanco">En la Veterinaria Patitas contamos con un equipo de trabajo altamente calificado
+                <p class="texto blanco">En la Veterinaria <i> Patitas </i> contamos con un equipo de trabajo altamente calificado
                         para atender a nuestra familia de cuatro patas. Estamos equipados con las mejores instalaciones
                         para su atención y su cuidado. Los profesionales más capacitados en la asistencia veterinaria
                         están a cargo de la salud de nuestras mascotas las 24 hs.,
@@ -96,8 +96,8 @@
                 <h1 class="titulo-medio">SERVICIOS</h1>
                 <p class="texto">
                     Nuestros servicios de alta calidad están disponibles tanto
-                    para madcotas tradicionales (perros, gatos) como para mascotas exóticas
-                    (hásterms, palomas, conejos, tortugas).
+                    para madsotas tradicionales (perros, gatos) como para mascotas exóticas
+                    (hámsters, palomas, conejos, tortugas).
                 </p>
             </div>
             <div class="grid">
@@ -259,22 +259,22 @@
                     <form action="" method="POST">
                         <div class="nombre-completo">
                             <div class="form-control">
-                                <label for="firstname">Nombre *</label>
+                                <label for="nombre">Nombre *</label>
                                 <input
                                     type="text"
                                     name="Nombre"
-                                    id="firtsname"
+                                    id="nombre"
                                     class="input-firtsname input-control"
                                     placeholder="p. ej.: Joanna"
                                     aria-label="Nombre"
                                     required>
                             </div>
                             <div class="form-control">
-                                <label for="lastname">Apellido *</label>
+                                <label for="apellido">Apellido *</label>
                                 <input
                                     type="text"
                                     name="Apellido"
-                                    id="lastname"
+                                    id="apellido"
                                     class="input-lastname input-control"
                                     placeholder="p. ej.: Lazarte"
                                     aria-label="Apellido"
@@ -293,10 +293,10 @@
                                 required>
                         </div>
                         <div class="form-control">
-                            <label for="message">Mensaje *</label>
+                            <label for="mensaje">Mensaje *</label>
                             <textarea
                                 name="Mensaje"
-                                id="message"
+                                id="mensaje"
                                 cols="30"
                                 rows="10"
                                 class="input-control"

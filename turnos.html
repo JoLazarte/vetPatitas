@@ -28,14 +28,14 @@
                 <span class=""><a href="registrate.html#registrate" target="_blank"><i class="fas fa-user icono-redes"></i></a>
                 </span>
                 <select class=" usuario-select" name="ELEGIR" value="ELEGIR" onchange="document.location.href=this.value">
-            
+                    <option selected disabled>NUEVO USUARIO</option>
                     <option value="registrate.html#registrate">REGISTRATE
                     </option>
-                    <option value="turnos.html#turnos" target="_blank">MIS TURNOS
+                    <option value="turnos.html#turnos">MIS TURNOS
                     </option>
-                    <option>MI PERFIL</option>
+                    <option value="perfil.html#perfil">MI PERFIL</option>
                 </select>
-                <span class="sp-btn"><a class="botonvioleta blanco" href="#contacto">CONTACTO</a></span>
+                <span class="sp-btn"><a class="botonvioleta blanco" href="index.html#contacto">CONTACTO</a></span>
             </div>
         </nav>
       
@@ -50,19 +50,19 @@
             </div>
             <div class="op-solapa">
                
-                <span class="menu-solapa"><a class="blanco" href="index.html#nosotros">QUIÉNES SOMOS</a></span>
+                <span class="menu-solapa"><a class="blanco nos" href="index.html#nosotros">QUIÉNES SOMOS</a></span>
                 <span class="menu-solapa"><a class="blanco" href="index.html#servicios">NUESTROS SERVICIOS</a></span>
-                <span class="menu-solapa"><a class="blanco" href="#">NUESTROS PACIENTES</a></span>
-                <span class="menu-solapa"><a class="blanco" href="#">SABÍAS QUE?</a></span>
+                <span class="menu-solapa"><a class="blanco" href="index.html#pacientes">NUESTROS PACIENTES</a></span>
+                <span class="menu-solapa"><a class="blanco" href="indexhtml#tutoriales">SABÍAS QUE?</a></span>
                 <select class="usuario-select-solapa" name="ELEGIR" value="ELEGIR" onchange="document.location.href=this.value">
                     <option selected disabled>NUEVO USUARIO</option>
-                    <option value="registrate.html#registrate">REGISTRATE
+                    <option  class="opS" value="registrate.html#registrate">REGISTRATE
                     </option>
-                    <option value="turnos.html#turnos" target="_blank">MIS TURNOS
+                    <option class="opS"  value="turnos.html#turnos">MIS TURNOS
                     </option>
-                    <option>MI PERFIL</option>
+                    <option value="perfil.html#perfil">MI PERFIL</option>
                 </select>
-                <span class="sp-btn"><a class="botonvioleta blanco" href="#contacto">CONTACTO</a></span>
+                <span class="sp-btn"><a class="botonvioleta blanco" href="index.html#contacto">CONTACTO</a></span>
             </div>
 
         </section>
@@ -82,7 +82,7 @@
                        <div class="nombre-completo">
                            <div class="form-control">
                                <label for="tipoDeServicio">Elija el tipo de servicio *</label>
-                                   <select class="select">
+                                   <select class="select" id="tipoDeServicio" name="Tipo De Servicio">
                                        <option>Clínico</option>
                                        <option>Cardiología</option>
                                        <option>Quirófano</option>
@@ -94,13 +94,14 @@
                            </div>
                            <div class="form-control">
                                <label for="especialidad">Elija una especialidad *</label>
-                               <select class="select">
+                               <select id="especialidad" name="Especialidad" class="select">
+                                   <option selected disabled>ESPECIALIDAD</option>
                                    <option>Mi primera consulta</option>
                                    <option>Control</option>
                                    <option>Castración</option>
                                    <option>Antirábica</option>
                                    <option>Radiografía de tórax</option>
-                                   <option>ecografía general</option>
+                                   <option>Ecografía general</option>
                                    <option>Electrocardiograma</option>
 
 
@@ -143,22 +144,22 @@
                    <form action="" method="POST">
                        <div class="nombre-completo">
                            <div class="form-control">
-                               <label for="firstname">Nombre de la mascota *</label>
+                               <label for="firstnameM">Nombre de la mascota *</label>
                                <input
                                    type="text"
                                    name="Nombre"
-                                   id="firtsname"
+                                   id="firstnameM"
                                    class="input-firtsname input-control"
                                    placeholder="p. ej.: Copito"
                                    aria-label="Nombre"
                                    required>
                            </div>
                            <div class="form-control">
-                               <label for="lastname">Apellido de la mascota *</label>
+                               <label for="lastnameM">Apellido de la mascota *</label>
                                <input
                                    type="text"
                                    name="Apellido"
-                                   id="lastname"
+                                   id="lastnameM"
                                    class="input-lastname input-control"
                                    placeholder="p. ej.: Lazarte"
                                    aria-label="Apellido"

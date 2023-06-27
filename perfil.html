@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="index.css">
+   <script src="https://kit.fontawesome.com/5f812df695.js" crossorigin="anonymous"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+</head>
+<a name="perfil"></a>
+
+<body>
+    <header>
+        <nav class="nav">
+           <div class="logoI">
+               <span><a class="" href="index.html#veterinaria"><i id="logoPat" class="fas fa-solid fa-paw"></i>
+                   Veterinaria Patitas</a></span>
+           </div>
+
+           <div class="botones-inicio">
+               
+                <span class="menu"><a href="index.html#nosotros" target="_blank">NOSOTROS</a></span>
+                <span class="menu"><a href="index.html#servicios" target="_blank">SERVICIOS</a></span>
+                
+                <span class=""><a href="registrate.html#registrate" target="_blank"><i class="fas fa-user icono-redes"></i></a>
+                </span>
+                <select class=" usuario-select" name="ELEGIR" value="ELEGIR" onchange="document.location.href=this.value">
+                    <option selected disabled>NUEVO USUARIO</option>
+                    <option value="registrate.html#registrate">REGISTRATE
+                    </option>
+                    <option value="turnos.html#turnos">MIS TURNOS
+                    </option>
+                    <option value="perfil.html#perfil">MI PERFIL
+                    </option>
+                </select>
+                <span class="sp-btn"><a class="botonvioleta blanco" href="index.html#contacto">CONTACTO</a></span>
+            </div>
+        </nav>
+      
+    </header>
+
+    <aside class="box-aside">
+        <button class="icono-barras" id="icono-barras"><i class="fas fa-bars" aria-hidden="true"></i></button>
+        <section class="solapa-menu" id="solapa-menu">
+            <div class="logoI-solapa">
+                <span><a class="blanco" href="index.html#veterinaria"><i id="logoPat-solapa" class="fas fa-solid fa-paw"></i>
+                    Veterinaria Patitas</a></span>
+            </div>
+            <div class="op-solapa">
+               
+                <span class="menu-solapa"><a class="blanco nos" href="index.html#nosotros">QUIÉNES SOMOS</a></span>
+                <span class="menu-solapa"><a class="blanco" href="index.html#servicios">NUESTROS SERVICIOS</a></span>
+                <span class="menu-solapa"><a class="blanco" href="index.html#pacientes">NUESTROS PACIENTES</a></span>
+                <span class="menu-solapa"><a class="blanco" href="indexhtml#tutoriales">SABÍAS QUE?</a></span>
+                <select class="usuario-select-solapa" name="ELEGIR" value="ELEGIR" onchange="document.location.href=this.value">
+                    <option selected disabled>NUEVO USUARIO</option>
+                    <option  class="opS" value="registrate.html#registrate">REGISTRATE
+                    </option>
+                    <option class="opS"  value="turnos.html#turnos">MIS TURNOS
+                    </option>
+                    <option>MI PERFIL</option>
+                </select>
+                <span class="sp-btn"><a class="botonvioleta blanco" href="index.html#contacto">CONTACTO</a></span>
+            </div>
+
+        </section>
+
+    </aside>
+
+       <section class="caja-contacto">
+           <button class="color-v" id="btn-aside"><i class="fas fa-bars" aria-hidden="true"></i></button>
+
+           <div class="contacto">
+    
+               <div class="escribime">
+                   <h1 class="font45">Mi Perfil</h1>
+                   <h2>Mis Datos</h2>
+                   <br>
+                   <div>
+                        <div><span>Nombre: María</span> <span class="marginL">Apellido: Hernández</span></div>
+                        <div><span>Email: mhernandez@gmail.com</span> <span class="marginL" >Teléfono: 1128443671</span></div>
+
+                   </div>
+                   <br>
+                   <span class="sp-btn"><a class="botonvioleta blanco">EDITAR DATOS</a></span>
+                   <br>
+                   <h2>Mascota 1</h2>
+                   <br>
+                   <div>
+                        <div><span>Nombre: Mimi</span> <span class="marginL"  >Apellido: Hernández</span></div>
+                        <div><span>Tipo de mascota: perro</span> <span  class="marginL" >Edad: 3 años</span></div>
+
+                   </div>
+                   <br>
+                   <span class="sp-btn"><a class="botonvioleta blanco">EDITAR DATOS</a></span>
+                   <br>
+                   <h3>Turnos</h3>
+                   <div>
+                        <div><span>Tipo de servicio: Cardiología</span> <span class="marginL"  >Especialidad: Electrocardiograma</span></div>
+                        <div><span>Fecha: 05/08/2023</span> <span  class="marginL" >Hora: 15:15</span></div>
+
+                   </div>
+                   <br>       
+                   <span class="sp-btn"><a class="botonvioleta blanco">EDITAR TURNO</a></span>
+                   <br>
+                   <div>
+                    <div><span>Tipo de servicio: Vacunatorio</span> <span class="marginL"  >Especialidad: Antirábica</span></div>
+                    <div><span>Fecha: 23/07/2023</span> <span  class="marginL" >Hora: 10:45</span></div>
+
+                   </div>
+                   <br>       
+                   <span class="sp-btn"><a class="botonvioleta blanco">EDITAR TURNO</a></span>
+
+                </div>
+
+           </div>
+       </section>
+   </main>
+
+   <footer class="footer">
+       <div class="final">
+           <a class="span-f" href="#nosotros"><span>NOSOTROS</span></a>
+           <a class="span-f" href="#servicios"><span>SERVICIOS</span></a>
+           <a class="span-f" href="#contacto"><span>CONTACTO</span></a>
+       </div>
+       <div class="final">
+           <a href="index.html#veterinaria"><span><i class="fab fa-twitter icono-final"></i></span></a>
+           <a href="index.html#veterinaria"><span><i class="fab fa-facebook icono-final"></i></span></a>
+           <a href="index.html#veterinaria"><span><i class="fas fa-envelope icono-final"></i></span></a>
+           <a href="index.html#veterinaria"><span><i class="fab fa-whatsapp icono-final"></i></span></a>
+
+
+       </div>
+       <div class="final">
+           <i id="logoF" class="fas fa-solid fa-paw"></i>
+           <span>Veterinaria Patitas</span>
+           <i id="logoF" class="fas fa-solid fa-paw"></i>
+       </div>
+   </footer>
+
+<script src="index.js"></script>
+</body>
+</html>

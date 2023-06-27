@@ -29,14 +29,14 @@
                 <span class=""><a href="registrate.html#registrate" target="_blank"><i class="fas fa-user icono-redes"></i></a>
                 </span>
                 <select class=" usuario-select" name="ELEGIR" value="ELEGIR" onchange="document.location.href=this.value">
-            
+                    <option selected disabled>NUEVO USUARIO</option>
                     <option value="registrate.html#registrate">REGISTRATE
                     </option>
-                    <option value="turnos.html#turnos" target="_blank">MIS TURNOS
+                    <option value="turnos.html#turnos">MIS TURNOS
                     </option>
-                    <option>MI PERFIL</option>
+                    <option value="perfil.html#perfil" >MI PERFIL</option>
                 </select>
-                <span class="sp-btn"><a class="botonvioleta blanco" href="#contacto">CONTACTO</a></span>
+                <span class="sp-btn"><a class="botonvioleta blanco" href="index.html#contacto">CONTACTO</a></span>
             </div>
        </nav>
       
@@ -51,19 +51,19 @@
             </div>
             <div class="op-solapa">
                
-                <span class="menu-solapa"><a class="blanco" href="index.html#nosotros">QUIÉNES SOMOS</a></span>
+                <span class="menu-solapa"><a class="blanco nos" href="index.html#nosotros">QUIÉNES SOMOS</a></span>
                 <span class="menu-solapa"><a class="blanco" href="index.html#servicios">NUESTROS SERVICIOS</a></span>
-                <span class="menu-solapa"><a class="blanco" href="#">NUESTROS PACIENTES</a></span>
-                <span class="menu-solapa"><a class="blanco" href="#">SABÍAS QUE?</a></span>
+                <span class="menu-solapa"><a class="blanco" href="index.html#pacientes">NUESTROS PACIENTES</a></span>
+                <span class="menu-solapa"><a class="blanco" href="indexhtml#tutoriales">SABÍAS QUE?</a></span>
                 <select class="usuario-select-solapa" name="ELEGIR" value="ELEGIR" onchange="document.location.href=this.value">
                     <option selected disabled>NUEVO USUARIO</option>
-                    <option value="registrate.html#registrate">REGISTRATE
+                    <option class="opS" value="registrate.html#registrate">REGISTRATE
                     </option>
-                    <option value="turnos.html#turnos" target="_blank">MIS TURNOS
+                    <option class="opS"  value="turnos.html#turnos">MIS TURNOS
                     </option>
-                    <option>MI PERFIL</option>
+                    <option value="perfil.html#perfil" >MI PERFIL</option>
                 </select>
-                <span class="sp-btn"><a class="botonvioleta blanco" href="#contacto">CONTACTO</a></span>
+                <span class="sp-btn"><a class="botonvioleta blanco" href="index.html#contacto">CONTACTO</a></span>
             </div>
 
         </section>
@@ -82,22 +82,22 @@
                    <form action="" method="POST">
                        <div class="nombre-completo">
                            <div class="form-control">
-                               <label for="firstname">Nombre *</label>
+                               <label for="firstnameReg">Nombre *</label>
                                <input
                                    type="text"
                                    name="Nombre"
-                                   id="firtsname"
+                                   id="firstnameReg"
                                    class="input-firtsname input-control"
                                    placeholder="p. ej.: Joanna"
                                    aria-label="Nombre"
                                    required>
                            </div>
                            <div class="form-control">
-                               <label for="lastname">Apellido *</label>
+                               <label for="lastnameReg">Apellido *</label>
                                <input
                                    type="text"
                                    name="Apellido"
-                                   id="lastname"
+                                   id="lastnameReg"
                                    class="input-lastname input-control"
                                    placeholder="p. ej.: Lazarte"
                                    aria-label="Apellido"
@@ -158,22 +158,22 @@
                        <br>
                        <div class="nombre-completo">
                            <div class="form-control">
-                               <label for="firstname">Nombre de la mascota *</label>
+                               <label for="firstnameMascota">Nombre de la mascota *</label>
                                <input
                                    type="text"
                                    name="Nombre"
-                                   id="firtsname"
+                                   id="firstnameMascota"
                                    class="input-firtsname input-control"
                                    placeholder="p. ej.: Copito"
                                    aria-label="Nombre"
                                    required>
                            </div>
                            <div class="form-control">
-                               <label for="lastname">Apellido de la mascota *</label>
+                               <label for="lastnameMascota">Apellido de la mascota *</label>
                                <input
                                    type="text"
                                    name="Apellido"
-                                   id="lastname"
+                                   id="lastnameMascota"
                                    class="input-lastname input-control"
                                    placeholder="p. ej.: Lazarte"
                                    aria-label="Apellido"
@@ -183,7 +183,8 @@
                        <div class="nombre-completo">
                            <div class="form-control">
                                <label for="tipoDeMascota">Qué tipo de mascota *</label>
-                               <select class="select">
+                               <select id="tipoDeMascota" name="Tipo De Mascota" class="select" aria-label="Mascota" placeholder="mascota">
+                                   <option selected disabled>MASCOTA</option>
                                    <option>perro</option>
                                    <option>gato</option>
                                    <option>ave (paloma, canario)</option>
@@ -211,6 +212,8 @@
                                    name="Edad"
                                    id="edad"
                                    class="input-lastname input-control"
+                                   placeholder="0"
+                                   aria-label="Edad"
                                    required>
                            </div>
 
